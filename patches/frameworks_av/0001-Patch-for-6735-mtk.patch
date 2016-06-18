@@ -440,7 +440,7 @@ index 8f06c55..6003b01 100644
      $(TOP)/frameworks/av/media/libstagefright/webm                  \
      $(TOP)/frameworks/native/include/media/openmax                  \
      $(TOP)/external/tremolo/Tremolo                                 \
-+    $(TOP)/device/ark/benefit_m7/MediaTek/fmaudioplayer
++    $(TOP)/device/smart/sprint4g/mtk/fmaudioplayer
  
  LOCAL_MODULE:= libmediaplayerservice
  
