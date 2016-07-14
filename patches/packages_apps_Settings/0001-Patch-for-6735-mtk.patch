@@ -1,0 +1,14 @@
+From d18b27da75de3b501c4d4becc8719cb470de6846 Mon Sep 17 00:00:00 2001
+From: olegsvs <oleg.texet@gmail.com>
+Date: Sun, 12 Jun 2016 13:20:41 -0400
+Subject: [PATCH] Patch for 6735 mtk
+
+Change-Id: I64a102adb5956100bfc0840d22c77eb5c166609e
+---
+ .../android/settings/sim/MultiSimEnablerPreference.java | 17 +++++++++++++++++
+ 1 file changed, 17 insertions(+)
+
+
+-- 
+1.9.1
+
