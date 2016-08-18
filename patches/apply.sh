@@ -10,7 +10,7 @@ git apply -v ../../device/smart/sprint4g/patches/frameworks_base/0001-location-s
 git apply -v ../../device/smart/sprint4g/patches/frameworks_base/0002-location-add-some-logs-just-to-be-confident.patch
 git apply -v ../../device/smart/sprint4g/patches/frameworks_base/0003-location-style-fix.patch
 git apply -v ../../device/smart/sprint4g/patches/frameworks_base/0004_minimal_xlog_frameworks_base.patch
-git apply -v ../../device/smart/sprint4g/patches/frameworks_base/0005-Update-for-mtk.patch
+git apply -v ../../device/smart/sprint4g/patches/frameworks_base/0007-Update-for-mtk.patch
 git apply -v ../../device/smart/sprint4g/patches/frameworks_base/0006_engineering_mode_audio_settings_frameworks_base.patch
 cd ../..
 cd packages/apps/Settings/
