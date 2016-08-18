@@ -8,7 +8,7 @@ $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 $(call inherit-product, device/smart/sprint4g/device_sprint4g.mk)
 
 # Configure dalvik heap
-$(call inherit-product, frameworks/native/build/phone-hdpi-2048-dalvik-heap.mk)
+$(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 
 TARGET_SCREEN_HEIGHT := 854
 TARGET_SCREEN_WIDTH := 480

@@ -5,10 +5,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/common/gps/gps_us_supl.mk)
 $(call inherit-product, vendor/smart/sprint4g/sprint4g-vendor-blobs.mk)
 
+PRODUCT_LOCALES := ru_RU en_US uk_UA
 PRODUCT_AAPT_CONFIG := normal hdpi
 PRODUCT_AAPT_PREF_CONFIG := hdpi
 DEVICE_PACKAGE_OVERLAYS += device/smart/sprint4g/overlay
 TARGET_OTA_ASSERT_DEVICE := sprint4g,Sprint4g,Y100pro
+CM_BUILDTYPE :=NIGHTLY
 
 ifeq ($(TARGET_PREBUILT_KERNEL),)
 	LOCAL_KERNEL := device/smart/sprint4g/prebuilt/kernel
@@ -48,6 +50,8 @@ PRODUCT_COPY_FILES += \
 # hardware specifics
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
+    frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml \
+    frameworks/native/data/etc/android.software.sip.xml:system/etc/permissions/android.software.sip.xml \
     frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:system/etc/permissions/android.hardware.camera.flash-autofocus.xml \
     frameworks/native/data/etc/android.hardware.location.gps.xml:system/etc/permissions/android.hardware.location.gps.xml \
     frameworks/native/data/etc/android.hardware.wifi.xml:system/etc/permissions/android.hardware.wifi.xml \
@@ -69,11 +73,11 @@ PRODUCT_PACKAGES += \
 
 # Torch
 PRODUCT_PACKAGES += \
-    	Torch
+    Torch
     	
 # MTK's Engineer Mode
 PRODUCT_PACKAGES += \
-        EngineerMode
+    EngineerMode
 	
 # Charger
 PRODUCT_PACKAGES += \
@@ -105,10 +109,6 @@ PRODUCT_COPY_FILES += \
     	$(LOCAL_PATH)/configs/audio_device.xml:system/etc/audio_device.xml \
     	$(LOCAL_PATH)/configs/audio_policy.conf:system/etc/audio_policy.conf \
     	$(LOCAL_PATH)/configs/audio_effects.conf:system/etc/audio_effects.conf
-    
-# Immvibe
-PRODUCT_PACKAGES += \
-	immvibe
 
 # Wifi
 PRODUCT_PACKAGES += \

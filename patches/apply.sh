@@ -3,6 +3,7 @@ cd ../../../..
 cd frameworks/av
 git apply -v ../../device/smart/sprint4g/patches/frameworks_av/0001-libmedia-stub-out-MTK-specific-bits-audio-working.patch
 git apply -v ../../device/smart/sprint4g/patches/frameworks_av/0002-frameworks_av_fmradio_patch.patch
+git apply -v ../../device/smart/sprint4g/patches/frameworks_av/0002-camera.patch
 git apply -v ../../device/smart/sprint4g/patches/frameworks_av/0003_engineering_mode_audio_settings_frameworks_av.patch
 cd ../..
 cd frameworks/base
@@ -10,7 +11,7 @@ git apply -v ../../device/smart/sprint4g/patches/frameworks_base/0001-location-s
 git apply -v ../../device/smart/sprint4g/patches/frameworks_base/0002-location-add-some-logs-just-to-be-confident.patch
 git apply -v ../../device/smart/sprint4g/patches/frameworks_base/0003-location-style-fix.patch
 git apply -v ../../device/smart/sprint4g/patches/frameworks_base/0004_minimal_xlog_frameworks_base.patch
-git apply -v ../../device/smart/sprint4g/patches/frameworks_base/0005-Update-for-mtk.patch
+git apply -v ../../device/smart/sprint4g/patches/frameworks_base/0007-Update-for-mtk.patch
 git apply -v ../../device/smart/sprint4g/patches/frameworks_base/0006_engineering_mode_audio_settings_frameworks_base.patch
 cd ../..
 cd packages/apps/Settings/
@@ -30,6 +31,9 @@ cd ../..
 cd packages/services/Telephony
 git apply -v ../../../device/smart/sprint4g/patches/packages_services_Telephony/0001-Update-for-mtk.patch
 cd ../../..
+cd system/core
+git apply -v ../../device/smart/sprint4g/patches/system_core/prevent-MTK-audio-and-silead-fingerprint-libs-from-spamming-log.patch
+cd ../..
 cd system/netd
 git apply -v ../../device/smart/sprint4g/patches/system_netd/0001-hotpost-fix.patch
 cd ../..
